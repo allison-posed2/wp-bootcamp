@@ -7,6 +7,9 @@ Course outline for the Seattle General Assembly WordPress Bootcamp.
 * [Overview](#overview)
 * [Setting Up Your Development Environment](#setting-up-your-development-environment)
 * [Creating a Child Theme](#creating-a-child-theme)
+* [Uploading to a Server](#uploading-to-a-server)
+* [HTML Example](#html-example)
+* [PHP Example](#php-example)
 * [Useful Resources](#useful-resources)
 * [Glossary](./glossary.md)
 
@@ -41,7 +44,17 @@ Self-managed system
 - Self-managed
 - No support
 
-## How MAMP Works
+## How The Internet Works
+A quick overview of how a browser communicates with a website.
+
+1. The browser makes a request to a server by asking for a URL.
+  * a 'GET' request.
+2. The server receives the request.
+  * if the request doesn't make sense, it responds with an error message (404, 500, etc).
+  * if the request can be processed, send back some HTML.
+3. The browser receives the HTML.
+4. The browser parses the HTML and applies CSS.
+
 ![The client communicates with the server, which runs Apache, MySQL, and PHP](./img/diagram-mamp.svg "MAMP Architecture Diagram")
 
 ## Setting up your development environment
@@ -92,8 +105,12 @@ Self-managed system
     - Username: `admin`
     - Password: `admin`
 
+### Toggle Developer Mode In Safari
+1. Open Safari.
+2. 'Safari' -> 'Preferences' -> 'Advanced' -> 'Show Develop menu in menu bar'
+
 ## Creating a Child Theme
-[WordPress Codex Article](https://codex.wordpress.org/Child_Themes)
+For a more in-depth tutorial, visit the [WordPress Codex Article](https://codex.wordpress.org/Child_Themes).
 
 1. Open Sublime Text.
 2. Click 'File' -> 'Open'
@@ -110,16 +127,51 @@ Self-managed system
 8. Navigate to your WordPress Admin panel -> 'Appearance' -> 'Themes'
 9. Select your new child theme.
 
+## Uploading to a Server
+In this class, we will be using an FTP client named 'Filezilla' to transfer our files between our development and production environments.
+
+### Transfering files with Filezilla
+1. Open Filezilla.
+2. Enter the following information in the top bar:
+  1. Host: `FTP Host`
+  2. Username: `FTP Username`
+  3. Password: `FTP Password`
+  4. Port: [blank]
+3. Click 'quickconnect'.
+4. Check the 'Always trust certificate in future sessions' and click 'OK'.
+5. In the local pane (bottom left), navigate to your local WordPress folder (`Documents/wordpress`).
+6. Drag the contents of the WordPress folder to the remote pane (bottom right).
+
+## HTML Example
+1. Open the `example` package in Sublime Text
+  * 'File' -> 'Open'
+3. Set the MAMP Document Root to `example/html`.
+  * MAMP -> 'Preferences' -> 'Web Server'
+4. In your browser, navigate to [http://localhost:8888](http://localhost:8888).
+5. View the page source.
+  * Use the URL [view-source:http://localhost:8888/](view-source:http://localhost:8888/)
+  * Keyboard shortcuts:
+    - Chrome: `cmd + option + u`
+    - Firefox: `cmd + u`
+    - Safari: `cmd + option + u`
+      * Not working? [Toggle developer mode in Safari](#toggle-developer-mode-in-safari)
+6. Leave these pages open to compare with the results from the next section.
+
+## PHP Example
+1. Open the `example` package in Sublime Text
+2. Set the MAMP Document Root to `example/php`.
+3. In your browser, navigate to [http://localhost:8888](http://localhost:8888).
+4. View the page source.
+  * Use the URL [view-source:http://localhost:8888/](view-source:http://localhost:8888/)
+  * Keyboard shortcuts:
+    - Chrome: `cmd + option + u`
+    - Firefox: `cmd + u`
+    - Safari: `cmd + option + u`
+      * Not working? [Toggle developer mode in Safari](#toggle-developer-mode-in-safari)
+5. Compare the source of HTML and PHP examples to verify that they are the same.
+
 ## Useful Resources
 * [WordPress Codex](https://codex.wordpress.org/)
 * [W3C School](http://www.w3schools.com/)
 * [CSS Tricks Blog](https://css-tricks.com/)
 * [Codepen.io](http://codepen.io/)
-
-## HTML/CSS Tutorial
-
-## WordPress Hierarchy
-content-page.php etc 
-page templates
-
-I do- We do- You do
