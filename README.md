@@ -175,3 +175,4 @@ In this class, we will be using an FTP client named 'Filezilla' to transfer our 
 * [W3C School](http://www.w3schools.com/)
 * [CSS Tricks Blog](https://css-tricks.com/)
 * [Codepen.io](http://codepen.io/)
+* [Automating FTP Deployments with Grunt](http://thomasphorton.com/automating-ftp-deployments-with-grunt/) (Advanced)
