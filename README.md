@@ -1,4 +1,4 @@
-# GA-Wordpress-Bootcamp
+# WordPress Bootcamp
 Course outline for the Seattle General Assembly WordPress Bootcamp.
 
 [WordPress Bootcamp Chat](http://stupidchatapp.herokuapp.com/c/wpbootcamp)
@@ -8,6 +8,7 @@ Course outline for the Seattle General Assembly WordPress Bootcamp.
 * [Setting Up Your Development Environment](#setting-up-your-development-environment)
 * [Creating a Child Theme](#creating-a-child-theme)
 * [Useful Resources](#useful-resources)
+* [Glossary](./glossary.md)
 
 ## Overview
 
@@ -39,6 +40,9 @@ Self-managed system
 ##### Cons
 - Self-managed
 - No support
+
+## How MAMP Works
+![The client communicates with the server, which runs Apache, MySQL, and PHP](./img/diagram-mamp.svg "MAMP Architecture Diagram")
 
 ## Setting up your development environment
 ### OS X/Mac
@@ -81,7 +85,7 @@ Self-managed system
     - Site Title: `WordPress Bootcamp`
     - Username: `admin`
     - Password: `admin`
-    - Your E-mail: <your email>
+    - Your E-mail: `[your email address]`
   8. Click 'Install WordPress'.
   9. Click 'Log In'.
   10. Enter the following information:
@@ -98,11 +102,11 @@ Self-managed system
 5. Create a new folder named `twentyfifteen-child`.
 6. Create a file in `twentyfifteen-child` named `style.css`.
   - Copy the child theme header template from the Codex into `style.css` and save the file.
-  - [Example](./files/twentyfifteen-child/style.css)
+  - [Example](./examples/twentyfifteen-child/style.css)
 7. Create a file in `twentyfifteen-child` named `functions.php`.
   - The file must begin with `<?php`.
   - On the next line, copy the `wp_enqueue_scripts` code snippet from the Codex into `functions.php` and save the file.
-  - [Example](./files/twentyfifteen-child/functions.php)
+  - [Example](./examples/twentyfifteen-child/functions.php)
 8. Navigate to your WordPress Admin panel -> 'Appearance' -> 'Themes'
 9. Select your new child theme.
 
@@ -111,3 +115,11 @@ Self-managed system
 * [W3C School](http://www.w3schools.com/)
 * [CSS Tricks Blog](https://css-tricks.com/)
 * [Codepen.io](http://codepen.io/)
+
+## HTML/CSS Tutorial
+
+## WordPress Hierarchy
+content-page.php etc 
+page templates
+
+I do- We do- You do
